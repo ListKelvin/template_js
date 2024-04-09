@@ -1,9 +1,8 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createBrowserRouter } from "react-router-dom";
 import Loadable from "./Loadable";
-import MainLayout from "../layout/MainLayout";
 import AuthGuard from "./AuthGuard";
-
+import MainLayout from "../layout";
 const ErrorNotLink = Loadable({ loader: () => import("../pages/error/Error") });
 const Home = Loadable({ loader: () => import("../pages/home/Home") });
 const Unauthorized = Loadable({
